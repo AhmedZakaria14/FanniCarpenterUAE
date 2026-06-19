@@ -60,8 +60,24 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="text-center text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} نجار الامارات fannicarpenteruae. جميع الحقوق محفوظة.</p>
+        <div className="flex flex-col items-center gap-6">
+          <div className="text-center text-xs text-stone-400">
+            <p>© {new Date().getFullYear()} نجار الامارات fannicarpenteruae. جميع الحقوق محفوظة.</p>
+          </div>
+
+          <a 
+            href="https://nasharhub.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center gap-2 px-5 py-2.5 bg-stone-800/40 backdrop-blur-sm border border-stone-700/50 rounded-2xl hover:border-amber-500/50 hover:bg-stone-800/80 transition-all duration-500 shadow-xl"
+            dir="rtl"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-amber-500/0 via-amber-500/10 to-amber-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+            <span className="relative text-xs text-stone-400 group-hover:text-stone-300 transition-colors">تم التصميم والتطوير بواسطة</span>
+            <span className="relative text-sm font-black bg-gradient-to-l from-amber-200 to-amber-500 bg-clip-text text-transparent transform group-hover:scale-105 transition-transform dir-ltr">
+              NasharHub.com
+            </span>
+          </a>
         </div>
       </div>
     </footer>

@@ -10,12 +10,16 @@ const cairo = Cairo({
 const logoUrl = 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781715339/%D9%86%D8%AC%D8%A7%D8%B1_%D8%AF%D8%A8%D9%8A_sobbgv.png';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://fannicarpenteruae.com'),
   title: 'نجار الامارات fannicarpenteruae',
   description: 'أفضل خدمات النجارة وتفصيل الأثاث والمطابخ وتركيب الأبواب والديكورات الخشبية في دبي والشارقة وعجمان. جودة عالية وأسعار منافسة.',
   icons: {
     icon: logoUrl,
     shortcut: logoUrl,
     apple: logoUrl,
+  },
+  alternates: {
+    canonical: '/',
   },
   openGraph: {
     type: 'website',
