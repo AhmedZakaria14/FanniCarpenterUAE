@@ -1,75 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import heroAjman from "@/src/assets/images/carpenter_ajman_seo_hero_1781717126651.jpg";
-import heroDubai from "@/src/assets/images/carpenter_dubai_seo_hero_1781717141850.jpg";
-import heroSharjah from "@/src/assets/images/carpenter_sharjah_seo_hero_1781717157117.jpg";
 
-const articles = [
-  {
-    title: "نجار في دبي 0505001597",
-    excerpt: "أفضل نجار في دبي من نجار الامارات لتركيب وإصلاح الأثاث والأبواب والشبابيك باحترافية عالية وأسعار تنافسية وخدمة سريعة في دبي.",
-    href: "/carpenter-in-dubai",
-    image: heroDubai,
-  },
-  {
-    title: "نجار في الشارقة 24 ساعة",
-    excerpt: "نجار محترف في الشارقة من نجار الامارات يقدم خدمات فك وتركيب وتصليح وصيانة الأثاث وغرف النوم والمطابخ والخزائن بجودة عالية.",
-    href: "/carpenter-in-sharjah",
-    image: heroSharjah,
-  },
-  {
-    title: "نجار في عجمان - خدمات متكاملة",
-    excerpt: "نجار في عجمان لجميع اعمال النجارة من تفصيل أثاث، تركيب أبواب وشبابيك خشبية، فك وتركيب غرف نوم، وتصليح أثاث خشبي في عجمان بأسعار منافسة.",
-    href: "/carpenter-in-ajman",
-    image: heroAjman,
-  }
-];
+const articles = [{"slug": "/carpenter", "title": "نجار محترف لجميع أعمال النجارة بدقة وجودة عالية", "description": "نجار محترف في الإمارات لأعمال التفصيل والتركيب والصيانة وفك وتركيب الأثاث. تعرف على الخدمات والأسعار وكيف تختار فني نجار قريب منك.", "image": "https://cdnmf.picsart.com/cloud-storage/5848b114-206d-450f-a42f-b0675db86518.jpg", "alt": "نجار محترف ينفذ أعمال نجارة وخشب في الإمارات"}, {"slug": "/carpenter-in-dubai", "title": "نجار في دبي لخدمات الخشب التي تحتاج إليها أينما كنت", "description": "نجار في دبي لأعمال الخشب والتفصيل والفك والتركيب في القصيص والقوز والبرشاء ومردف. تعرف على الخدمات وطريقة الحجز والاستعداد للزيارة.", "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3HiTB7HAxPstkap06sBbxVYKHH3/hf_20260819_184355_56c7911e-d305-4fba-8456-35d9d64b5a8c.png", "alt": "نجار في دبي يركب خزانة خشبية داخل منزل حديث"}, {"slug": "/carpenter-in-ajman", "title": "نجار في عجمان لأعمال خشبية تمنح كل مساحة ما تحتاج إليه", "description": "نجار في عجمان لتنفيذ وتعديل وتجديد الأعمال الخشبية في المنازل والمكاتب والمحلات، مع خدمات في النعيمية والراشدية والجرف والروضة.", "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3HiTB7HAxPstkap06sBbxVYKHH3/hf_20260819_184355_bb452d93-4a98-401a-8c03-5b4e617f12ed.png", "alt": "نجار في عجمان ينفذ وحدات تخزين خشبية مخصصة"}, {"slug": "/carpenter-in-sharjah", "title": "أفضل نجار في الشارقة يعتني بتفاصيل الخشب من التصميم حتى التشطيب", "description": "نجار في الشارقة لأعمال التصميم والتفصيل والديكور الخشبي وتشطيب الأثاث، مع تغطية النهدة والتعاون والخان والمجاز ومويلح ومناطق أخرى.", "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3HiTB7HAxPstkap06sBbxVYKHH3/hf_20260819_184355_84145553-bfa1-4570-a9a5-664fe655637f.png", "alt": "نجار في الشارقة ينفذ مكتب دراسة وديكور خشبي"}, {"slug": "/carpenter-installation", "title": "نجار تركيب لتجميع الأثاث وضبطه كما يجب", "description": "نجار تركيب وفك وتركيب الأثاث وغرف النوم والدواليب باحترافية، مع شرح أخطاء التركيب ومشكلات الوصلات ومتى يحتاج الأثاث إلى إصلاح.", "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3HiTB7HAxPstkap06sBbxVYKHH3/hf_20260819_184355_79a30781-d82a-43fe-80fb-7507492e4297.png", "alt": "نجار تركيب يجمع ويضبط أثاث غرفة نوم وخزانة"}];
 
 export function BlogSection() {
   return (
-    <section className="py-20 bg-stone-100">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-stone-900 mb-6 drop-shadow-sm">
-            أحدث <span className="text-amber-600">المقالات</span> والنصائح
-          </h2>
-          <div className="w-24 h-1.5 bg-amber-500 rounded-full mx-auto mb-6"></div>
-          <p className="text-lg text-stone-600 max-w-2xl mx-auto font-medium">
-            تعرف على أحدث خدماتنا وأفضل النصائح للحفاظ على الأثاث والديكورات الخشبية في مختلف إمارات الدولة.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {articles.map((article, index) => (
-            <Link 
-              key={index} 
-              href={article.href}
-              className="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col h-full"
-            >
-              <div className="relative h-56 overflow-hidden">
-                <Image
-                  src={article.image}
-                  alt={article.title}
-                  fill
-                  className="object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-stone-900 mb-3 group-hover:text-amber-600 transition-colors">
-                  {article.title}
-                </h3>
-                <p className="text-stone-600 text-sm mb-6 flex-grow leading-relaxed">
-                  {article.excerpt}
-                </p>
-                <div className="mt-auto flex items-center justify-between text-amber-600 font-bold text-sm">
-                  <span>اقرأ المزيد</span>
-                  <span className="transform rtl:rotate-180 group-hover:translate-x-2 transition-transform">→</span>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
+    <section className="bg-stone-100 py-20"><div className="container mx-auto px-4 md:px-6"><div className="mb-16 text-center"><h2 className="mb-6 text-3xl font-extrabold text-stone-900 md:text-5xl">أحدث <span className="text-amber-600">المقالات</span> والنصائح</h2><div className="mx-auto mb-6 h-1.5 w-24 rounded-full bg-amber-500"/><p className="mx-auto max-w-2xl text-lg font-medium text-stone-600">أدلة عملية عن خدمات النجارة وتركيب الأثاث والوصول إلى فني نجار في دبي والشارقة وعجمان.</p></div><div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">{articles.map((article)=><Link key={article.slug} href={article.slug} className="group flex h-full flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition-all hover:shadow-xl"><div className="relative h-56 overflow-hidden"><Image src={article.image} alt={article.alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-105"/></div><div className="flex flex-grow flex-col p-6"><h3 className="mb-3 text-xl font-bold leading-8 text-stone-900 group-hover:text-amber-700">{article.title}</h3><p className="mb-6 line-clamp-3 flex-grow text-sm leading-7 text-stone-600">{article.description}</p><div className="mt-auto flex items-center justify-between text-sm font-bold text-amber-700"><span>اقرأ المزيد</span><span aria-hidden>←</span></div></div></Link>)}</div></div></section>
   );
 }
