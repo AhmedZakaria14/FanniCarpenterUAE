@@ -7,7 +7,7 @@ const cairo = Cairo({
   variable: '--font-cairo',
 });
 
-const logoUrl = 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781715339/%D9%86%D8%AC%D8%A7%D8%B1_%D8%AF%D8%A8%D9%8A_sobbgv.png';
+const logoUrl = '/logo.png';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://fannicarpenteruae.com'),
