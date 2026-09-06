@@ -10,11 +10,11 @@ export function Footer() {
           <div className="text-center md:text-right">
             <Link href="/" className="inline-flex flex-col items-center gap-2 mb-4">
               <Image
-                src="/logo.png"
+                src="/fanni-carpenter-logo.png"
                 alt="نجار الامارات fannicarpenteruae"
-                width={96}
-                height={96}
-                className="h-24 w-24 object-contain filter saturate-200 brightness-110"
+                width={128}
+                height={128}
+                className="h-32 w-32 object-contain filter saturate-200 brightness-110"
               />
               <span className="text-xl font-bold text-amber-500">
                 نجار الامارات

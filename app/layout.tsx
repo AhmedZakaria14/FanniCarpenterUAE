@@ -7,7 +7,7 @@ const cairo = Cairo({
   variable: '--font-cairo',
 });
 
-const logoUrl = '/logo.png';
+const logoUrl = '/fanni-carpenter-logo.png';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://fannicarpenteruae.com'),
