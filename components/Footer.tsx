@@ -12,9 +12,9 @@ export function Footer() {
               <Image
                 src="/fanni-carpenter-logo-transparent.png"
                 alt="نجار الامارات fannicarpenteruae"
-                width={104}
-                height={104}
-                className="h-26 w-26 object-contain filter saturate-200 brightness-110"
+                width={112}
+                height={112}
+                className="h-28 w-28 object-contain filter saturate-200 brightness-110"
               />
               <span className="text-xl font-bold text-amber-500">
                 نجار الامارات
