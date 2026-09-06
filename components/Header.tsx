@@ -16,9 +16,9 @@ export function Header() {
             <Image
               src="/fanni-carpenter-logo-transparent.png"
               alt="نجار الامارات fannicarpenteruae"
-              width={88}
-              height={88}
-              className="h-16 w-16 md:h-22 md:w-22 flex-shrink-0 object-contain"
+              width={80}
+              height={80}
+              className="h-16 w-16 md:h-20 md:w-20 flex-shrink-0 object-contain"
               priority
             />
             <span className="text-xl md:text-2xl font-bold tracking-tight text-amber-900">
