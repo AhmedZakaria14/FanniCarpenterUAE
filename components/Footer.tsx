@@ -10,11 +10,11 @@ export function Footer() {
           <div className="text-center md:text-right">
             <Link href="/" className="inline-flex flex-col items-center gap-2 mb-4">
               <Image
-                src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1781715339/%D9%86%D8%AC%D8%A7%D8%B1_%D8%AF%D8%A8%D9%8A_sobbgv.png"
+                src="/logo.png"
                 alt="نجار الامارات fannicarpenteruae"
-                width={60}
-                height={60}
-                className="object-contain filter saturate-200 brightness-110"
+                width={96}
+                height={96}
+                className="h-24 w-24 object-contain filter saturate-200 brightness-110"
               />
               <span className="text-xl font-bold text-amber-500">
                 نجار الامارات
